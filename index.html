@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBOUND</title>
+    <link href="https://fonts.googleapis.com/css?family=Codystar|Baloo+Chettan|Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fade">
+    <!-- Fade When Body is Loaded -->
+
+
+
+    <header id="showcase" class="grid">
+        <!-- Showcase Background Image -->
+        <div class="bg-video">
+            <video autoplay muted loop id="myVideo">
+                <source src="mp4/colorbg.mp4" type="video/mp4">
+            </video>
+        </div> 
+        <div class="text-wrap">
+            <h1>Air<span class="heading-bound-text">BOUND</span></h1>
+            <h2>Take flight with <span class="">air bound.</span></h2>
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="section-a" class="grid">
+                <a href="#" class="brand__link--box">Nike</a>
+                <a href="#" class="brand__link--box">Adidas</a>
+                <a href="#" class="brand__link--box">Under Armour</a>
+                <a href="#" class="brand__link--box">More</a>
+        </section>
+
+        <section id="section-b" class="grid">
+            <div class="sportswear">
+                <img src="img/blacknikefootball.png" alt="dfas">
+            </div>
+        </section>
+
+        <section id="section-c" class="grid">
+                <h2 class="sportswear-title">Accelerate Your Game With Our Premium Sportswear Products.</h2>
+                <a href="#" class="btn browse-btn btn-animated"><i class="fas fa-shopping-cart"></i> browse</a>
+        </section>
+
+        <section id="section-d" class="grid">
+            <div class="box">
+                <h2>Come Visit Us! <i class="fas fa-map-signs"></i></h2>
+                <div id="googleMap" style="width:100%;height:400px;">
+                </div>
+            </div>
+            <div class="box">
+                <h2 class="content-title">Sign Up For Email!</h2>
+                <form class="signup">
+                    <label for="name">First Name</label>
+                    <input id="name" type="text" name="Name" required maxlength="50">
+
+                    <label for="name">Last Name</label>
+                    <input id="name" type="text" name="Name" required maxlength="50">
+                
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="Email" required maxlength="50">
+
+                    <button class="button-primary" type="submit" >Sign Up!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer" class="grid">
+        <div>&copy;2018 AirBOUND</div>
+        <div>Project Enhanced By
+            <a href="#" target="_blank">LijahTheDev</a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+
+</html>
