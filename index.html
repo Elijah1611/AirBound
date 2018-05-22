@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AirBOUND</title>
+    <link href="img/favicon.png" type="image/png" >
     <link href="https://fonts.googleapis.com/css?family=Codystar|Baloo+Chettan|Lobster" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body class="fade">
@@ -18,7 +20,7 @@
     <header id="showcase" class="grid">
         <!-- Showcase Background Image -->
         <div class="bg-video">
-            <video autoplay muted loop id="myVideo">
+            <video playsinline autoplay muted loop id="myVideo">
                 <source src="mp4/colorbg.mp4" type="video/mp4">
             </video>
         </div> 
@@ -50,8 +52,7 @@
         <section id="section-d" class="grid">
             <div class="box">
                 <h2>Come Visit Us! <i class="fas fa-map-signs"></i></h2>
-                <div id="googleMap" style="width:100%;height:400px;">
-                </div>
+                <div id="map"></div>
             </div>
             <div class="box">
                 <h2 class="content-title">Sign Up For Email!</h2>
@@ -73,13 +74,14 @@
 
     <footer id="main-footer" class="grid">
         <div>&copy;2018 AirBOUND</div>
-        <div>Project Enhanced By
-            <a href="#" target="_blank">LijahTheDev</a>
+        <div>
+            <a href="https://lijahthedev.com/" target="_blank">LijahTheDev</a>
         </div>
     </footer>
 
     <script src="app.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUczGlqznS4v80JI4Gt9mQb7k13etfwZ8&callback=initMap"
+    async defer></script>
 </body>
 
 </html>
