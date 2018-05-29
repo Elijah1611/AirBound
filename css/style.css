@@ -142,47 +142,41 @@ img {
     text-align: center;
     text-shadow: .125rem .125rem .9375rem rgb(0, 0, 0);
     opacity: .7;
-    transition: all .5s;
+    transition: all .4s;
 }
 
 .brand__link--box:hover {
     opacity: 1;
+    background-size: cover;
+    backface-visibility: hidden; /* Fix img popping  */
 }
 
 .brand__link--box:nth-child(1) {
     background: url(../img/nike1.jpg) center;
-    background-size: cover;
 }
 .brand__link--box:nth-child(1):hover {
     background: url(../img/nike2.jpg) center top;
-    background-size: cover;
 }
 
 .brand__link--box:nth-child(2) {
     background: url(../img/adidas2.jpeg) center;
-    background-size: cover;
 }
 .brand__link--box:nth-child(2):hover {
     background: url(../img/adidas1.jpeg)  center;
-    background-size: cover;
 }
 
 .brand__link--box:nth-child(3) {
     background: url(../img/armour1.jpg) center;
-    background-size: cover;
 }
 .brand__link--box:nth-child(3):hover {
     background: url(../img/armour2.jpg) center;
-    background-size: cover;
 }
 
 .brand__link--box:nth-child(4) {
     background: url(../img/more1.jpg) center;
-    background-size: cover;
 }
 .brand__link--box:nth-child(4):hover {
     background: url(../img/more2.jpg) right;
-    background-size: cover;
 }
 
 /* =========================
